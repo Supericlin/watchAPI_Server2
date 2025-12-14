@@ -1,0 +1,116 @@
+DataType: "StepRoll"
+
+ResultData: "{"dataTime":"2025-12-14 09:49:32","roll":"0","step":"124303","imei":"9622619900"}"
+
+timestamp: December 14, 2025 at 9:49:50 AM UTC+8
+
+
+DataType: "Location"
+
+ResultData: "{"activateDate":"","battery":"31","commandCode":"","expireDate":"","gpsTime":"2025-12-13 09:05:51","imei":"9622619900","imsi":"","latitude":"","longitude":"","model":"","posType":"","reqid":"","signalTime":"2025-12-13 09:05:51","speed":"0","status":""}"
+
+timestamp: December 13, 2025 at 9:05:53 AM UTC+8
+
+
+DataType: "Health"
+
+ResultData: "{"bloodOxygen":"0","bloodOxygenTime":"2025-12-14 09:07:18","bloodPressureMax":"126","bloodPressureMin":"69","bpTime":"2025-12-14 09:07:18","calorie":"","commandCode":"9012","deepSleep":"","distance":"","heartRate":79,"hrTime":"2025-12-14 09:07:18","imei":"9622619900","lighSleep":"","reqid":"","sleepTime":"","steps":"","totalSleep":""}"
+
+timestamp: December 14, 2025 at 9:07:20 AM UTC+8
+
+
+DataType: "alarm"
+
+ResultData: "{"ExceptionID":0,"SerialNumber":"358800048893284","GeoFenceID":null,"GeoFenceName":null,"NotificationType":5,"Message":null,"Created":"2025-12-14T05:36:32.9223239Z","Deleted":false,"ClearDate":null,"ClearBy":null,"Note":null,"Lat":22.379603,"Lng":114.136742,"Power":53,"Address":"","AccON":null,"EngineON":null,"OtherStatus":null,"GSM":null,"DeviceUTCTime":"2025-12-14T05:36:31","OLat":22.379603,"OLng":114.136742,"BaiduLat":22.379603,"BaiduLng":114.136742,"SerialNo":null,"DataType":1}"
+
+timestamp: December 14, 2025 at 1:36:53 PM UTC+8
+
+
+DataType: "alarm"
+
+ResultData: "{"ExceptionID":0,"SerialNumber":"358800048893284","GeoFenceID":null,"GeoFenceName":null,"NotificationType":140,"Message":null,"Created":"2025-12-14T09:56:19.8146075Z","Deleted":false,"ClearDate":null,"ClearBy":null,"Note":null,"Lat":22.283553,"Lng":114.189110,"Power":37,"Address":"","AccON":null,"EngineON":null,"OtherStatus":null,"GSM":null,"DeviceUTCTime":"2025-12-14T09:56:19","OLat":22.283553,"OLng":114.189110,"BaiduLat":22.283553,"BaiduLng":114.189110,"SerialNo":null,"DataType":0}"
+
+timestamp: December 14, 2025 at 5:56:20 PM UTC+8
+
+
+DataType: "Temperature"
+
+ResultData: "{"temperature":36.1,"temperatureTime":"2025-12-14 22:10:35","imei":"358800048893284"}"
+
+timestamp: December 14, 2025 at 10:10:38 PM UTC+8
+
+
+
+报警类型说明 NotificationType
+报警类型 	说明
+	
+1	进电子栅栏
+2	出电子栅栏
+3	低电
+5	SOS报警
+6	断电
+7	震动
+8	位移报警
+12	进盲区
+13	出盲区
+14	离线报警
+15	开机
+16	关机
+17	首次定位
+22	拔出报警(断电报警另一种说法)
+23	换卡提醒
+64	碰撞报警
+65	手表脱落
+66	蓝牙报警
+67	定距上报
+108	运动报警
+109	拆除报警 
+110	跌倒报警
+115	低电关机报警
+116	高温报警
+117	低温报警
+136	佩戴提醒
+138	久坐提醒
+139	血压异常
+140	心率异常
+156	进入守护区
+157	离开守护区
+158	剪断报警
+159	吃药提醒
+167	光感报警
+172	通话位置异常
+173	低电状态
+174	手环戴上取下状态
+175	手表运行静止状态
+195	心率过高
+196	心率过低
+197	收缩压偏高
+198	收缩压偏低
+199	舒张压偏高
+200	舒张压偏低
+201	呼吸率
+202	血氧异常
+208	家庭守护 到校提醒
+203	家庭守护 到家提醒
+204	家庭守护 离校提醒
+205	非法解锁
+206	锁定提醒
+207	烟雾感应
+
+
+json format = {
+    IMEI: int,
+    DataType: string,
+    batteryLevel: int,
+    bloodPressureH: int
+    bloodPressureL: int,
+    bodyTemperature: float,
+    gpsLatitude: float,
+    gpsLongitude: float,
+    heartRate: int,
+    receivedAt: September 29, 2025 at 11:27:57 PM UTC+8,
+    spo2: int,
+    stepCount: int,
+    timestamp: "2025-09-29T15:27:52.563Z",
+    NotificationType: int
+  };
